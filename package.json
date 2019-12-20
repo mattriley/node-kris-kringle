@@ -1,0 +1,29 @@
+{
+    "name": "kris-kringle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "go.js",
+    "bin": {
+        "kris-kringle": "./bin/cli.js",
+        "kk": "./bin/cli.js"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.590.0",
+        "lodash": "^4.17.15"
+    },
+    "devDependencies": {
+        "module-alias": "^2.2.2",
+        "tap-spec": "^5.0.0",
+        "tape": "^4.11.0",
+        "node-module-index-generator": "mattriley/node-module-index-generator"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.test.js' | tap-spec",
+        "index": "generate-node-module-index-files 'src/**'"
+    },
+    "author": "Matt Riley",
+    "license": "ISC",
+    "_moduleAliases": {
+        "lib": "lib"
+    }
+}
