@@ -1,4 +1,4 @@
-# Kris Kingle
+# Kris Kringle
 
 Randomly allocates KKs and notifies by SMS given a list of players and mobile phone numbers.
 
