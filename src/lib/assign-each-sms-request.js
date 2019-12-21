@@ -1,6 +1,6 @@
 const sender = 'KrisKringle';
 
-module.exports = players => {
+module.exports = () => players => {
     return players.map(player => {
         const smsRequest = {
             Message: player.message,

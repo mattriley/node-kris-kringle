@@ -8,6 +8,7 @@
         "kk": "./bin/cli.js"
     },
     "dependencies": {
+        "@mattriley/node-wire": "github:mattriley/node-wire",
         "aws-sdk": "^2.590.0",
         "lodash": "^4.17.15"
     },
