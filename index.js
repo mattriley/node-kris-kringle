@@ -1,8 +1,8 @@
-const wire = require('@mattriley/node-wire');
+const minit = require('@mattriley/minit');
 const src = require('./src');
 
 module.exports = ({ fs, sns }) => {
-    const lib = wire(src.lib, { fs, sns });
-    const commands = wire(src.commands, { lib });
+    const lib = minit(src.lib, { fs, sns });
+    const commands = minit(src.commands, { lib });
     return commands;
 };

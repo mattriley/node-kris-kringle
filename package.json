@@ -1,29 +1,27 @@
 {
-    "name": "kris-kringle",
+    "name": "@mattriley/kris-kringle",
     "version": "1.0.0",
     "description": "",
+    "author": "Matt Riley",
+    "license": "ISC",
     "main": "go.js",
     "bin": {
-        "kris-kringle": "./bin/cli.js",
-        "kk": "./bin/cli.js"
+        "kris-kringle": "./bin/kk.js",
+        "kk": "./bin/kk.js"
     },
     "dependencies": {
-        "@mattriley/node-wire": "github:mattriley/node-wire",
-        "aws-sdk": "^2.590.0",
+        "@mattriley/minit": "github:mattriley/node-minit",
+        "aws-sdk": "^2.648.0",
         "lodash": "^4.17.15"
     },
     "devDependencies": {
         "module-alias": "^2.2.2",
         "tap-spec": "^5.0.0",
-        "tape": "^4.11.0",
-        "node-module-index-generator": "mattriley/node-module-index-generator"
+        "tape": "^4.13.2"
     },
     "scripts": {
-        "test": "tape 'tests/**/*.test.js' | tap-spec",
-        "index": "generate-node-module-index-files 'src/**'"
+        "test": "tape 'tests/**/*.test.js' | tap-spec"
     },
-    "author": "Matt Riley",
-    "license": "ISC",
     "_moduleAliases": {
         "lib": "lib"
     }
