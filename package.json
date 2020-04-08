@@ -10,7 +10,7 @@
         "kk": "./bin/kk.js"
     },
     "dependencies": {
-        "@mattriley/minit": "github:mattriley/node-minit",
+        "@mattriley/module-initialiser": "github:mattriley/node-module-initialiser",
         "aws-sdk": "^2.648.0",
         "lodash": "^4.17.15"
     },
