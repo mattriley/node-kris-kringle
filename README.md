@@ -1,6 +1,6 @@
 # Kris Kringle
 
-Randomly allocates KKs and notifies by SMS given a list of players and mobile phone numbers.
+Randomly assigns KKs with SMS notifications.
 
 For example, given input file `kk.json`:
 
