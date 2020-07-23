@@ -1,10 +1,9 @@
 const flow = require('lodash/flow');
 
-module.exports = ({ service }) => async ({ players, predicate, spend }) => {
-    const assignKks = predicate ? service.assignEachKkUntil(predicate) : service.assignEachKk;
-    
+module.exports = ({ service }) => ({ players, spend }) => {
+
     return flow(
-        assignKks,
+        service.until(() => true, service.assignEachKk),
         service.assignEachSmsMessage(spend),
         service.assignEachSmsRequest,
         service.notifyEachPlayer,

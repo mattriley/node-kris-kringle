@@ -1,4 +1,5 @@
 module.exports = ({ io }) => async players => {
+
     const notify = async player => {
         try {
             // await io.sns.publish(player.smsRequest).promise();
@@ -15,4 +16,5 @@ module.exports = ({ io }) => async players => {
         const notification = { timestamp, ...result };
         return { ...player, notification };
     }));
+    
 };
