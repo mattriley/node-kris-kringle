@@ -1,6 +1,4 @@
-const sender = 'KrisKringle';
-
-module.exports = () => players => {
+module.exports = ({ config }) => players => {
 
     return players.map(player => {
         const smsRequest = {
@@ -8,16 +6,17 @@ module.exports = () => players => {
             MessageAttributes: {
                 'AWS.SNS.SMS.SMSType': {
                     DataType: 'String',
-                    StringValue: 'Promotional' // 'Transactional'
+                    StringValue: config.smsType
                 },
                 'AWS.SNS.SMS.SenderID': {
                     DataType: 'String',
-                    StringValue: sender
+                    StringValue: config.smsSenderId
                 }
             },
             PhoneNumber: player.number
         };
+        
         return { ...player, smsRequest };
     });
-    
+
 };
