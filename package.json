@@ -16,11 +16,13 @@
     },
     "devDependencies": {
         "module-alias": "^2.2.2",
+        "module-indexgen": "^0.1.3",
         "tap-spec": "^5.0.0",
         "tape": "^4.13.2"
     },
     "scripts": {
-        "test": "tape 'tests/**/*.test.js' | tap-spec"
+        "test": "tape 'tests/**/*.test.js' | tap-spec",
+        "indexgen": "indexgen src"
     },
     "_moduleAliases": {
         "lib": "lib"

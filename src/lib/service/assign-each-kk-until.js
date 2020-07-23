@@ -1,6 +1,6 @@
-module.exports = ({ lib }) => predicate => players => {
+module.exports = ({ service }) => predicate => players => {
     const assign = () => {
-        const playersWithKks = lib.assignEachKk(players);
+        const playersWithKks = service.assignEachKk(players);
         return predicate(playersWithKks) ? playersWithKks : assign();
     };
     return assign();

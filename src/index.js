@@ -1,5 +1,5 @@
 module.exports = {
     __modulename: 'src',
-    commands: require('./commands'),
-    lib: require('./lib')
+    lib: require('./lib'),
+    initialise: require('./initialise')
 };

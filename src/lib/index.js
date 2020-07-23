@@ -1,9 +1,5 @@
 module.exports = {
     __modulename: 'lib',
-    assignEachKkUntil: require('./assign-each-kk-until'),
-    assignEachKk: require('./assign-each-kk'),
-    assignEachSmsMessage: require('./assign-each-sms-message'),
-    assignEachSmsRequest: require('./assign-each-sms-request'),
-    notifyEachPlayer: require('./notify-each-player'),
-    writeResultFile: require('./write-result-file')
+    commands: require('./commands'),
+    service: require('./service')
 };
