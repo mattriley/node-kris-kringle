@@ -10,9 +10,9 @@
         "kk": "./bin/kk.js"
     },
     "dependencies": {
-        "@mattriley/module-initialiser": "github:mattriley/node-module-initialiser",
         "aws-sdk": "^2.648.0",
-        "lodash": "^4.17.19"
+        "lodash": "^4.17.19",
+        "module-composer": "^0.1.6"
     },
     "devDependencies": {
         "module-alias": "^2.2.2",
