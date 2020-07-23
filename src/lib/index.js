@@ -1,5 +1,6 @@
 module.exports = {
     __modulename: 'lib',
     commands: require('./commands'),
-    service: require('./service')
+    service: require('./service'),
+    io: require('./io')
 };
