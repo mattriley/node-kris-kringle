@@ -1,3 +1,4 @@
+const fs = require('fs');
 const initialise = require('../src/initialise');
 const { commands } = initialise();
 

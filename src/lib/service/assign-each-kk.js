@@ -1,4 +1,4 @@
-const { shuffle } = require('lodash');
+const shuffle = require('lodash/shuffle');
 
 module.exports = () => players => {
     const shuffledNames = shuffle(players.map(p => p.name));
