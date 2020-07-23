@@ -1,4 +1,5 @@
-module.exports = ({ fs }) => players => {
+module.exports = ({ fs }) => async playersPromise => {
+    const players = await playersPromise;
     const now = new Date();
     const data = { timestamp: now.toISOString(), players };
     const json = JSON.stringify(data, null, 4);
