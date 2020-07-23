@@ -1,9 +1,12 @@
-const AWS = require('aws-sdk');
 const fs = require('fs');
+const AWS = require('aws-sdk');
 
 module.exports = () => {
 
-    const sns = new AWS.SNS({ region: 'ap-southeast-2' });
-    return { fs, sns };
+    return { 
+        fs, 
+        sns: new AWS.SNS({ region: 'ap-southeast-2' }),
+        getDate: () => new Date()
+    };
 
 };
