@@ -12,7 +12,7 @@
     "dependencies": {
         "@mattriley/module-initialiser": "github:mattriley/node-module-initialiser",
         "aws-sdk": "^2.648.0",
-        "lodash": "^4.17.15"
+        "lodash": "^4.17.19"
     },
     "devDependencies": {
         "module-alias": "^2.2.2",
