@@ -1,11 +1,10 @@
-module.exports = ({ io }) => async players => {
+module.exports = ({ io, config }) => players => {
 
-    const notify = async player => {
+    const notify = player => {
         try {
-            // await io.sns.publish(player.smsRequest).promise();
+            if (!config.dryRun) return io.sns.publish(player.smsRequest).promise();
             return { sent: true };
         } catch (err) {
-            console.warn(err);
             return { sent: false, error: err.message };
         }
     };
@@ -16,5 +15,5 @@ module.exports = ({ io }) => async players => {
         const notification = { timestamp, ...result };
         return { ...player, notification };
     }));
-    
+
 };
