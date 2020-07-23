@@ -1,8 +1,6 @@
-const shuffle = require('lodash/shuffle');
+module.exports = ({ io }) => players => {
 
-module.exports = () => players => {
-
-    const names = shuffle(players.map(p => p.name));
+    const names = io.shuffle(players.map(p => p.name));
     return players.map((player, i) => ({ ...player, kk: names[i] }));
 
 };
