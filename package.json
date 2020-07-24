@@ -8,7 +8,7 @@
         "kk": "./bin/kk.js"
     },
     "scripts": {
-        "indexgen": "indexgen src"
+        "indexgen": "indexgen"
     },
     "dependencies": {
         "aws-sdk": "^2.648.0",
@@ -17,6 +17,6 @@
     },
     "devDependencies": {
         "eslint": "^7.5.0",
-        "module-indexgen": "^0.1.3"
+        "module-indexgen": "^0.1.4"
     }
 }
