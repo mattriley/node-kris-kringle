@@ -13,7 +13,7 @@
     "dependencies": {
         "aws-sdk": "^2.1040.0",
         "lodash": "^4.17.21",
-        "module-composer": "^0.1.6"
+        "module-composer": "^0.6.0"
     },
     "devDependencies": {
         "eslint": "^8.3.0",

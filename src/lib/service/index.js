@@ -1,5 +1,4 @@
 module.exports = {
-    __modulename: 'service',
     assignKks: require('./assign-kks'),
     assignSmsMessages: require('./assign-sms-messages'),
     assignSmsRequests: require('./assign-sms-requests'),
