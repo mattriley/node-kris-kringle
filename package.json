@@ -17,6 +17,6 @@
     },
     "devDependencies": {
         "eslint": "^8.3.0",
-        "module-indexgen": "^0.1.4"
+        "module-indexgen": "^0.2.2"
     }
 }
