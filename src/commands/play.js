@@ -14,10 +14,15 @@ module.exports = ({ service, io, config }) => async ({ players, spend }) => {
         return acc;
     }, {});
 
-    // console.log(previousAssignments);
+    const predicate = players => {
+        return players.every(p => {
+            if (p.name === p.kk) return false;
+            return !previousAssignments[p.name]?.has(p.kk);
+        });
+    };
 
     return flow(
-        service.until(() => true, service.assignKks),
+        service.until(predicate, service.assignKks),
         service.assignSmsMessages(spend),
         service.assignSmsRequests,
         service.sendNotifications,
