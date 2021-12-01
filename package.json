@@ -11,7 +11,7 @@
         "indexgen": "indexgen"
     },
     "dependencies": {
-        "aws-sdk": "^2.648.0",
+        "aws-sdk": "^2.1040.0",
         "lodash": "^4.17.19",
         "module-composer": "^0.1.6"
     },
