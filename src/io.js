@@ -4,8 +4,9 @@ const shuffle = require('lodash/shuffle');
 
 module.exports = ({ config }) => {
 
-    return { 
-        fs, 
+    return {
+        fs,
+        fsp: fs.promises,
         sns: new AWS.SNS({ region: config.awsRegion }),
         shuffle,
         getDate: () => new Date()
