@@ -1,9 +1,13 @@
-module.exports = ({ io }) => async p => {
+const path = require('path');
+
+module.exports = ({ io, config }) => async p => {
 
     const players = await p;
     const now = io.getDate();
     const data = { timestamp: now.toISOString(), players };
     const json = JSON.stringify(data, null, 4);
-    return io.fs.promises.writeFile(`${now.getTime()}.json`, json);
+    const outputFile = path.join(config.outputDir, `${now.getTime()}.json`);
+    await io.fs.promises.mkdir(config.outputDir, { recursive: true });
+    await io.fs.promises.writeFile(outputFile, json);
 
 };
