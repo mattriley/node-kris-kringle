@@ -6,7 +6,7 @@ module.exports = ({ config }) => {
 
     const io = src.io({ config });
     const service = compose('service', { io, config });
-    const commands = compose('commands', { service });
+    const commands = compose('commands', { service, io, config });
 
     return { commands };
 
