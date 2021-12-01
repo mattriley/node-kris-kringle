@@ -1,6 +1,6 @@
 const fs = require('fs');
-const initialise = require('../src/initialise');
-const { commands } = initialise();
+const boot = require('../boot');
+const { commands } = boot();
 
 const dataFile = process.argv[2];
 const data = JSON.parse(fs.readFileSync(dataFile));

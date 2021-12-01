@@ -1,4 +1,6 @@
 module.exports = {
-    lib: require('./lib'),
-    initialise: require('./initialise')
+    commands: require('./commands'),
+    service: require('./service'),
+    config: require('./config'),
+    io: require('./io')
 };

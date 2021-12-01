@@ -1,11 +1,11 @@
 const composer = require('module-composer');
-const lib = require('./lib');
-const compose = composer(lib);
+const src = require('./src');
+const compose = composer(src);
 
 module.exports = () => {
 
-    const config = lib.config();
-    const io = lib.io({ config });
+    const config = src.config();
+    const io = src.io({ config });
     const service = compose('service', { io, config });
     const commands = compose('commands', { service });
 
