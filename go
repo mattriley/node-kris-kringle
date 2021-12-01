@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-node ./bin/kk.js example.json
+node ./bin/kk.js example.json config.json

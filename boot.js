@@ -1,8 +1,8 @@
 const composer = require('module-composer');
-const { config, ...src } = require('./src');
+const src = require('./src');
 const compose = composer(src);
 
-module.exports = () => {
+module.exports = ({ config }) => {
 
     const io = src.io({ config });
     const service = compose('service', { io, config });
