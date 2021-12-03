@@ -10,8 +10,8 @@ windows:
     panes:
       - commands:
         - nvm use
-        - clear
         - code .
+        - clear
       - commands:
         - nvm use
         - clear
