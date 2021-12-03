@@ -1,8 +1,12 @@
-module.exports = () => spend => players => {
+module.exports = ({ config }) => spend => players => {
 
     return players.map(player => {
-        const message = `Hey ${player.name}! Your KK is ${player.kk}. The spend is $${spend}. Merry Christmas! 🎅🏻🎄`;
+        const message = config.template
+            .replace('{name}', player.name)
+            .replace('{kk}', player.kk)
+            .replace('{spend}', spend);
+
         return { ...player, message };
     });
-    
+
 };
