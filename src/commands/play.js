@@ -2,15 +2,8 @@ const flow = require('lodash/flow');
 
 module.exports = ({ service }) => async ({ players, spend }) => {
 
-    const eachFileData = await service.readOutputFiles();
-
-    const previousAssignments = eachFileData.reduce((acc, data) => {
-        data.players.forEach(player => {
-            if (!acc[player.name]) acc[player.name] = new Set();
-            acc[player.name].add(player.kk);
-        });
-        return acc;
-    }, {});
+    const log = await service.readOutputFiles();
+    const previousAssignments = service.getPreviousAssignments(log);
 
     const predicate = players => {
         return players.every(p => {
