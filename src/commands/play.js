@@ -1,10 +1,8 @@
 const flow = require('lodash/flow');
-const glob = require('fast-glob');
 
-module.exports = ({ service, io, config }) => async ({ players, spend }) => {
+module.exports = ({ service }) => async ({ players, spend }) => {
 
-    const files = await glob(`${config.outputDir}/*.json`);
-    const eachFileData = files.map(f => JSON.parse(io.fs.readFileSync(f)));
+    const eachFileData = await service.readOutputFiles();
 
     const previousAssignments = eachFileData.reduce((acc, data) => {
         data.players.forEach(player => {
