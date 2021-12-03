@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PROJECT_NAME="kris-kringle"
+export SRC="src"
+export INDEXGEN_PATHS="$SRC $TEST_HELPERS"
