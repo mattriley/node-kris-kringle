@@ -2,6 +2,7 @@
 
 export PROJECT_NAME="kris-kringle"
 export SRC="src"
+export MODULES="$SRC/modules"
 export TESTS="tests"
 export TEST_WATCH_PATTERN="{$SRC,$TESTS}/**/*.js"
-export INDEXGEN_PATHS="$SRC"
+export INDEXGEN_PATHS="$MODULES"
