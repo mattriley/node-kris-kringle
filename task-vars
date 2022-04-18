@@ -3,6 +3,5 @@
 export PROJECT_NAME="kris-kringle"
 export SRC="src"
 export TESTS="tests"
-export TEST_HELPERS="test-helpers"
-export TEST_WATCH_PATTERN="{$SRC,$TESTS,$TEST_HELPERS}/**/*.js"
-export INDEXGEN_PATHS="$SRC $TEST_HELPERS"
+export TEST_WATCH_PATTERN="{$SRC,$TESTS}/**/*.js"
+export INDEXGEN_PATHS="$SRC"
