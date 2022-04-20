@@ -5,16 +5,16 @@
 const { createHarness, createJSONReporter } = require('zora');
 const path = require('path');
 const src = require('../src');
-const bootOrig = require('../boot');
+const composeOrig = require('../compose');
 
 const setup = () => {
 
-    const boot = (args = {}) => {
+    const compose = (args = {}) => {
         const config = {};
-        return bootOrig({ config });
+        return composeOrig({ config });
     };
 
-    return { src, boot };
+    return { src, compose };
 };
 
 const args = setup();

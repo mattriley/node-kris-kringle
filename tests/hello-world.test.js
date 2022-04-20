@@ -1,7 +1,7 @@
-module.exports = ({ boot, test }) => {
+module.exports = ({ compose, test }) => {
 
     test('returns only files with given id', async t => {
-        const modules = boot();
+        const modules = compose();
         console.log(modules);
     });
 
