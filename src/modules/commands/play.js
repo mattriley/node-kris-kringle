@@ -1,9 +1,10 @@
 const flow = require('lodash/flow');
 
-module.exports = ({ service }) => async ({ players, spend }) => {
+module.exports = ({ services, config }) => async () => {
 
-    const log = await service.readOutputFiles();
-    const previousAssignments = service.getPreviousAssignments(log);
+    const { players, spend } = config;
+    const log = await services.readOutputFiles();
+    const previousAssignments = services.getPreviousAssignments(log);
 
     const predicate = players => {
         return players.every(p => {
@@ -13,11 +14,11 @@ module.exports = ({ service }) => async ({ players, spend }) => {
     };
 
     return flow(
-        service.until(predicate, service.assignKks),
-        service.assignSmsMessages(spend),
-        service.assignSmsRequests,
-        service.sendNotifications,
-        service.writeResultFile
+        services.until(predicate, services.assignKks),
+        services.assignSmsMessages(spend),
+        services.assignSmsRequests,
+        services.sendNotifications,
+        services.writeResultFile
     )(players);
 
 };

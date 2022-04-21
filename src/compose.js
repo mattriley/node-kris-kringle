@@ -4,8 +4,8 @@ const modules = require('./modules');
 module.exports = ({ config }) => {
 
     const compose = composer(modules);
-    const { io } = compose('io', { config });
-    const { service } = compose('service', { io, config });
-    return compose('commands', { service, io, config });
+    const { io } = compose('io', { config }, io => io.setup());
+    const { services } = compose('services', { io, config });
+    return compose('commands', { services, io, config });
 
 };

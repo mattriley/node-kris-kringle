@@ -2,7 +2,7 @@
 
 Randomly assigns KKs with SMS notifications.
 
-For example, given input file `kk.json`:
+For example, given input file `config.json`:
 
 ```json
 {
@@ -24,7 +24,7 @@ For example, given input file `kk.json`:
 }
 ```
 
-Run `kris-kringle kk.json` to send notifications similar to:
+Run `./bin/kk` to send notifications similar to:
 
 - Hey foo! Your KK is baz. The spend is $100. Merry Christmas! 🎅🏻🎄
 - Hey bar! Your KK is foo. The spend is $100. Merry Christmas! 🎅🏻🎄

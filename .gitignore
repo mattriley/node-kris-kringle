@@ -1,11 +1,10 @@
+*output
 temp
-output
-build_output
-package_output
-node_modules
+ignore
 coverage
-nyc_output
+node_modules
+config.*
 itermocil.yml
-.vscode
 .parcel-cache
+.vscode
 .DS_Store

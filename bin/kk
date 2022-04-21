@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const compose = require('../src/compose');
+const defaultConfig = require('../src/default-config.json');
+const userConfig = require(`${process.cwd()}/config.json`);
+const config = { ...defaultConfig, ...userConfig };
+const { commands } = compose({ config });
+commands.play();

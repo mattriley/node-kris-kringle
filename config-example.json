@@ -1,4 +1,5 @@
 {
+    "dryRun": true,
     "spend": 100,
     "players": [
         {
