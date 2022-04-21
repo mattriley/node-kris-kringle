@@ -1,5 +1,11 @@
+temp
+output
+build_output
+package_output
 node_modules
-iTermocil.yml
-kkout
-params.json
-config.json
+coverage
+nyc_output
+itermocil.yml
+.vscode
+.parcel-cache
+.DS_Store

@@ -5,6 +5,6 @@ module.exports = {
     awsRegion: 'ap-southeast-2',
     smsType: 'Promotional', // 'Transactional'
     smsSenderId: 'KrisKringle',
-    outputDir: 'kkout'
+    outputDir: 'output'
 
 };

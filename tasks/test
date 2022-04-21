@@ -1,5 +1,0 @@
-#!/bin/bash
-
-find "$TESTS" -name "*.test.js" -print \
-    | xargs node --unhandled-rejections=none "./tasks/test.js" \
-    | npx zr
