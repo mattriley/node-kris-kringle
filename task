@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PROJECT_NAME="@mattriley/kris-kringle"
+export PROJECT_NAME="kris-kringle"
 export SRC="./src"
 export DATA="./data"
 export MODULES="$SRC/modules"
