@@ -1,5 +1,5 @@
 module.exports = {
     commands: require('./commands'),
-    services: require('./services'),
-    io: require('./io')
+    io: require('./io'),
+    services: require('./services')
 };

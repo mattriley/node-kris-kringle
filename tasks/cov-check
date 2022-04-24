@@ -1,3 +1,0 @@
-#!/bin/bash
-
-./tasks/c8-check-coverage

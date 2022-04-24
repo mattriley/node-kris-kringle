@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "eslint": "^8.13.0",
-        "module-indexgen": "^0.7.1"
+        "module-indexgen": "^0.9.6"
     },
     "nurt": {
         "nodeVersion": 16
