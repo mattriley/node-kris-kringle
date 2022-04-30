@@ -17,8 +17,5 @@
         "chokidar-cli": "^3.0.0",
         "eslint": "^8.13.0",
         "module-indexgen": "^0.9.6"
-    },
-    "nurt": {
-        "nodeVersion": 16
     }
 }
