@@ -14,6 +14,7 @@
         "module-composer": "^0.13.0"
     },
     "devDependencies": {
+        "chokidar-cli": "^3.0.0",
         "eslint": "^8.13.0",
         "module-indexgen": "^0.9.6"
     },
