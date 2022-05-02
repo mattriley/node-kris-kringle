@@ -11,11 +11,11 @@
         "aws-sdk": "^2.1118.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
-        "module-composer": "^0.13.0"
+        "module-composer": "^0.14.1"
     },
     "devDependencies": {
         "chokidar-cli": "^3.0.0",
         "eslint": "^8.13.0",
-        "module-indexgen": "^0.9.6"
+        "module-indexgen": "^0.12.0"
     }
 }
