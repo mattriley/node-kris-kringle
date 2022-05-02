@@ -1,3 +1,3 @@
 module.exports = {
-    play: require('./play')
+    draw: require('./draw')
 };

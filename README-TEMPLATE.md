@@ -8,12 +8,6 @@ Christmas gift-giving made easy by randomising a draw and notifying players of t
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-- [Install](#install)
-- [Usage](#usage)
-- [Example](#example)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## Install
 
 ```
@@ -32,31 +26,7 @@ kk [config-json-path]
 
 ## Example
 
-<details open>
-<summary>config-example.json</summary>
-
-```js
-{
-    "dryRun": true,
-    "template": "Hey {name}! Your KK is {kk}. The spend is ${spend}. Merry Christmas! 🎅🏻🎄",
-    "spend": 100,
-    "players": [
-        {
-            "name": "foo",
-            "number": "+6111111111"
-        },
-        {
-            "name": "bar",
-            "number": "+6122222222"
-        },
-        {
-            "name": "baz",
-            "number": "+6133333333"
-        }
-    ]
-}
-```
-</details>
+<%- readCode('config-example.json') %>
 
 Text messages:
 

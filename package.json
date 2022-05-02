@@ -1,21 +1,31 @@
 {
-    "name": "@mattriley/kris-kringle",
-    "version": "1.0.0",
-    "description": "Randomly assigns KKs with SMS notifications",
+    "name": "kris-kringle",
+    "version": "0.1.0",
+    "description": "Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.",
     "author": "Matt Riley",
     "license": "ISC",
+    "repository": "github:mattriley/kris-kringle",
+    "homepage": "https://github.com/mattriley/kris-kringle",
     "bin": {
         "kk": "bin/kk"
     },
+    "files": [
+        "src/**/*",
+        "bin/**/*"
+    ],
     "dependencies": {
         "aws-sdk": "^2.1118.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
-        "module-composer": "^0.14.1"
+        "module-composer": "^0.14.2"
     },
     "devDependencies": {
-        "chokidar-cli": "^3.0.0",
+        "ejs": "^3.1.7",
         "eslint": "^8.13.0",
+        "husky": "^7.0.4",
         "module-indexgen": "^0.12.0"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }

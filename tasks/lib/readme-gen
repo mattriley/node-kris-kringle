@@ -2,6 +2,7 @@
   
 . ./task-vars
 
-README="README.md"
+README="./README.md"
 node ./tasks/lib/readme-file-generator.js > $README
 npx doctoc --maxlevel 2 $README
+git add $README

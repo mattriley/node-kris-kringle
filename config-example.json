@@ -1,5 +1,6 @@
 {
     "dryRun": true,
+    "template": "Hey {name}! Your KK is {kk}. The spend is ${spend}. Merry Christmas! 🎅🏻🎄",
     "spend": 100,
     "players": [
         {
