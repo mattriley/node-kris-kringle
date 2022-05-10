@@ -1,7 +1,8 @@
-const ejs = require('ejs');
-const fs = require('fs');
-const process = require('process');
-const child = require('child_process');
+import fs from 'fs';
+import ejs from 'ejs';
+import child from 'child_process';
+import process from 'process';
+import compose from '../../src/compose';
 
 const fetchText = url => child.execSync(`curl ${url}`).toString('utf8');
 
@@ -29,8 +30,17 @@ const renderCode = (code, summary, opts = {}) => {
     ].join('\n');
 };
 
+const moduleGraph = () => {
+    const { mermaid } = compose().composition;
+    return [
+        '```mermaid',
+        mermaid(),
+        '```',
+    ].join('\n');
+};
+
 const [templateFile = 'README-TEMPLATE.md'] = process.argv.slice(2);
-const data = { fetchText, fetchCode, readCode };
+const data = { fetchText, fetchCode, readCode, moduleGraph };
 
 ejs.renderFile(templateFile, data, {}, (err, res) => {
     if (err) throw err;

@@ -6,11 +6,11 @@ Christmas gift-giving made easy by randomising a draw and notifying players of t
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 - [Install](#install)
 - [Usage](#usage)
 - [Example](#example)
+- [Architecture](#architecture)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -65,3 +65,15 @@ Text messages:
 - Hey baz! Your KK is bar. The spend is $100. Merry Christmas! 🎅🏻🎄
 
 See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/master/src/default-config.json) for other config options.
+
+## Architecture
+
+```mermaid
+graph TD;
+    commands-->services;
+    commands-->io;
+    commands-->config;
+    io-->config;
+    services-->io;
+    services-->config;
+```

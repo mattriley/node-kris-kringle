@@ -5,7 +5,6 @@ Christmas gift-giving made easy by randomising a draw and notifying players of t
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Install
@@ -35,3 +34,7 @@ Text messages:
 - Hey baz! Your KK is bar. The spend is $100. Merry Christmas! 🎅🏻🎄
 
 See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/master/src/default-config.json) for other config options.
+
+## Architecture
+
+<%- moduleGraph() %>

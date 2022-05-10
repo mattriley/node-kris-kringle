@@ -17,9 +17,10 @@
         "aws-sdk": "^2.1118.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
-        "module-composer": "^0.14.2"
+        "module-composer": "^0.15.0"
     },
     "devDependencies": {
+        "doctoc": "^2.2.0",
         "ejs": "^3.1.7",
         "eslint": "^8.13.0",
         "husky": "^7.0.4",
