@@ -1,6 +1,6 @@
 {
     "name": "kris-kringle",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.",
     "author": "Matt Riley",
     "license": "ISC",
