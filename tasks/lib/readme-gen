@@ -2,10 +2,9 @@
   
 . ./task-vars
 
-README="README.md"
-
 node \
---experimental-specifier-resolution=node \ # The node mode enables support for optional file extensions and the ability to import a directory that has an index file.
-./tasks/lib/readme-file-generator.mjs > $README # The mjs extension enables the ES module loader.
+--experimental-specifier-resolution=node \
+--input-type=module \
+- "$README_TEMPLATE" < ./tasks/lib/readme-file-generator.js > "$README"
 
-npx doctoc --maxlevel 2 $README
+npx doctoc --maxlevel 2 "$README"

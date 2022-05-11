@@ -2,7 +2,7 @@ import fs from 'fs';
 import ejs from 'ejs';
 import child from 'child_process';
 import process from 'process';
-import compose from '../../src/compose';
+import compose from './src/compose';
 
 const fetchText = url => child.execSync(`curl ${url}`).toString('utf8');
 
@@ -39,7 +39,7 @@ const moduleGraph = () => {
     ].join('\n');
 };
 
-const [templateFile = 'README-TEMPLATE.md'] = process.argv.slice(2);
+const [templateFile] = process.argv.slice(2);
 const data = { fetchText, fetchCode, readCode, moduleGraph };
 
 ejs.renderFile(templateFile, data, {}, (err, res) => {
