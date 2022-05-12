@@ -2,4 +2,4 @@
   
 . ./task-vars
 
-node "./tasks/lib/zora-testrunner.js" "$TEST_PATTERN"
+node ./tasks/lib/zora-testrunner.js "$TEST_PATTERN"

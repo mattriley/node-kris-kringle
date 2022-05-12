@@ -1,8 +1,8 @@
-const { createHarness } = require('zora');
-const { createDiffReporter } = require('zora-reporters');
-const glob = require('fast-glob');
-const process = require('process');
-const path = require('path');
+import { createHarness } from 'zora';
+import { createDiffReporter } from 'zora-reporters';
+import glob from 'fast-glob';
+import process from 'process';
+import path from 'path';
 
 const [pattern] = process.argv.slice(2);
 const testFiles = glob.sync(pattern);
@@ -13,7 +13,8 @@ const runTests = filePath => {
     return test(filePath, ({ only, skip, ...t }) => {
         const test = (...args) => t.test(...args);
         Object.assign(test, { only, skip });
-        return require(path.resolve(filePath))({ test });
+        const { default: invokeTests } = await import(path.resolve(filePath));
+        return invokeTests({ test });
     });
 };
 
