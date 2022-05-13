@@ -10,7 +10,7 @@ const testHarness = createHarness({ indent: true });
 const test = testHarness[process.env.ZORA_ONLY === 'true' ? 'only' : 'test'];
 
 const runTests = filePath => {
-    return test(filePath, ({ only, skip, ...t }) => {
+    return test(filePath, async ({ only, skip, ...t }) => {
         const test = (...args) => t.test(...args);
         Object.assign(test, { only, skip });
         const { default: invokeTests } = await import(path.resolve(filePath));
