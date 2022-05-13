@@ -25,10 +25,10 @@ SMS notifications are sent using AWS SNS and requires an AWS profile to be confi
 ## Usage
 
 ```
-kk [config-json-path]
+kk <configJsonFile>
 ```
 
-`config-json-path` defaults to `config.json`.
+`configJsonFile` defaults to `config.json`.
 
 ## Example
 
