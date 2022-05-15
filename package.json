@@ -14,7 +14,7 @@
         "bin/**/*"
     ],
     "dependencies": {
-        "aws-sdk": "^2.1134.0",
+        "aws-sdk": "^2.1135.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
         "module-composer": "^0.15.1"
