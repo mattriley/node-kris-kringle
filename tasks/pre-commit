@@ -1,9 +1,0 @@
-#!/bin/bash
-  
-. ./task-vars
-
-set -ex
-
-npx task lint
-# npx task cov-check
-npx task readme-gen
