@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. ./task-vars-default
-
 export ITERMOCIL_TASKS=("edit" "indexgen-watch")
 export ESLINT_PATHS=("$SRC")
 
