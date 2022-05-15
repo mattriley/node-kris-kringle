@@ -25,7 +25,7 @@
         "eslint": "^8.15.0",
         "husky": "^8.0.1",
         "module-indexgen": "^0.12.5",
-        "task-library": "^0.0.16"
+        "task-library": "^0.0.21"
     },
     "publishConfig": {
         "access": "public"
