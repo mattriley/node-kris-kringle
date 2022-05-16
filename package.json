@@ -4,10 +4,10 @@
     "description": "Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.",
     "author": "Matt Riley",
     "license": "ISC",
-    "repository": "github:mattriley/kris-kringle",
     "homepage": "https://github.com/mattriley/kris-kringle",
+    "repository": "github:mattriley/kris-kringle",
     "bin": {
-        "kk": "bin/kk"
+        "kk": "./bin/kk"
     },
     "files": [
         "src/**/*",
@@ -25,7 +25,7 @@
         "eslint": "^8.15.0",
         "husky": "^8.0.1",
         "module-indexgen": "^0.12.5",
-        "task-library": "^0.0.21"
+        "task-library": "^0.0.25"
     },
     "publishConfig": {
         "access": "public"
