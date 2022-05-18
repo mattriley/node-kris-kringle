@@ -6,5 +6,5 @@ const compose = require('../src/compose');
 
 const [configFile = 'config.json'] = process.argv.slice(2);
 const config = JSON.parse(fs.readFileSync(configFile, 'utf-8'));
-const { commands } = compose(config);
+const { commands } = compose({ configs: [config] });
 commands.draw();
