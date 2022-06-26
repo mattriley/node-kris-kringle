@@ -25,7 +25,7 @@ kk <configJsonFile>
 
 ## Example
 
-<%- readCode('config-example.json') %>
+<%- await renderCode(fetchCode('config-example.json')) %>
 
 Text messages:
 
@@ -37,4 +37,4 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 
 ## Architecture
 
-<%- moduleGraph() %>
+<%- await compose(c => renderCode(c.mermaid(), 'mermaid')) %>
