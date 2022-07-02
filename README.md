@@ -1,5 +1,10 @@
 # Kris Kringle
 
+<p align="right">
+    <code>0% cov</code>&nbsp;
+    <code>151 sloc</code>&nbsp;
+    <code>16 files</code></p>
+
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
 
 ## Table of Contents

@@ -1,5 +1,7 @@
 # Kris Kringle
 
+<%- await lib.renderMetrics() %>
+
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
 
 ## Table of Contents
@@ -25,7 +27,7 @@ kk <configJsonFile>
 
 ## Example
 
-<%- await renderCode(fetchCode('config-example.json')) %>
+<%- await lib.renderCode(lib.fetchCode('config-example.json')) %>
 
 Text messages:
 
@@ -37,4 +39,4 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 
 ## Architecture
 
-<%- await compose(c => renderCode(c.mermaid(), 'mermaid')) %>
+<%- await lib.compose(c => lib.renderCode(c.mermaid(), 'mermaid')) %>
