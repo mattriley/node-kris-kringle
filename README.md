@@ -3,7 +3,9 @@
 <p align="right">
     <code>0% cov</code>&nbsp;
     <code>151 sloc</code>&nbsp;
-    <code>16 files</code></p>
+    <code>16 files</code>&nbsp;
+    <code>4 deps</code>&nbsp;
+    <code>1 dev deps</code></p>
 
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
 
@@ -21,6 +23,7 @@ Christmas gift-giving made easy by randomising a draw and notifying players of t
 
 ## Install
 
+###### <p align="right"><a href="https://www.npmjs.com/package/kris-kringle">https://www.npmjs.com/package/kris-kringle</a></p>
 ```
 npm install kris-kringle
 ```
@@ -37,7 +40,7 @@ kk <configJsonFile>
 
 ## Example
 
-###### <p align="right"><a href="https://github.com/mattriley/kris-kringle/blob/main/config-example.json">config-example.json</a></p>
+###### <p align="right"><a href="undefined/blob/main/config-example.json">config-example.json</a></p>
 ```json
 {
     "dryRun": true,
@@ -70,7 +73,7 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 
 ## Architecture
 
-###### <p align="right"><em>Can't see the diagram?</em> <a id="link-1" href="https://github.com/mattriley/kris-kringle#user-content-link-1">View it on GitHub</a></p>
+###### <p align="right"><em>Can't see the diagram?</em> <a id="link-1" href="undefined#user-content-link-1">View it on GitHub</a></p>
 ```mermaid
 graph TD;
     commands-->services;

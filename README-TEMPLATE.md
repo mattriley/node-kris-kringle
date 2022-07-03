@@ -1,19 +1,8 @@
-# Kris Kringle
-
-<%- await lib.renderMetrics() %>
-
-Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
-
-## Table of Contents
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<%- lib.renderOpening() %>
 
 ## Install
 
-```
-npm install kris-kringle
-```
+<%- await lib.renderCode('npm install kris-kringle', '', 'https://www.npmjs.com/package/kris-kringle'); %>
 
 SMS notifications are sent using AWS SNS and requires an AWS profile to be configured.
 
