@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export DISPLAY_NAME="Kris Kringle"
-export GITHUB_REPO_NAME="node-kris-kringle"
 export ITERMOCIL_TASKS="edit | barrel-gen-watch"
 
 export COV_BRANCHES=0

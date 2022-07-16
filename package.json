@@ -9,7 +9,7 @@
         "email": "m@ttriley.dev",
         "url": "https://github.com/mattriley"
     },
-    "repository": "github:mattriley/kris-kringle",
+    "repository": "github:mattriley/node-kris-kringle",
     "bugs": {
         "url": "https://github.com/mattriley/node-kris-kringle/issues",
         "email": "m@ttriley.dev"
@@ -32,6 +32,6 @@
         "module-composer": "^0.54.0"
     },
     "devDependencies": {
-        "task-library": "^0.6.1"
+        "task-library": "^0.6.2"
     }
 }
