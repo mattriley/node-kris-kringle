@@ -1,6 +1,6 @@
 {
     "name": "kris-kringle",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.",
     "homepage": "https://github.com/mattriley/node-kris-kringle",
     "license": "ISC",
@@ -32,6 +32,6 @@
         "module-composer": "^0.54.0"
     },
     "devDependencies": {
-        "task-library": "^0.6.0"
+        "task-library": "^0.6.1"
     }
 }
