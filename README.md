@@ -1,4 +1,4 @@
-# kris-kringle
+# Kris Kringle
 
 
 <p align="right">
