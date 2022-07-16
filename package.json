@@ -1,11 +1,19 @@
 {
     "name": "kris-kringle",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.",
-    "author": "Matt Riley",
+    "homepage": "https://github.com/mattriley/node-kris-kringle",
     "license": "ISC",
-    "homepage": "https://github.com/mattriley/kris-kringle",
+    "author": {
+        "name": "Matt Riley",
+        "email": "m@ttriley.dev",
+        "url": "https://github.com/mattriley"
+    },
     "repository": "github:mattriley/kris-kringle",
+    "bugs": {
+        "url": "https://github.com/mattriley/node-kris-kringle/issues",
+        "email": "m@ttriley.dev"
+    },
     "bin": {
         "kk": "./bin/kk"
     },
@@ -13,16 +21,17 @@
         "src/**/*",
         "bin/**/*"
     ],
+    "scripts": {
+        "test": "npx task test",
+        "start": "npx task start"
+    },
     "dependencies": {
-        "aws-sdk": "^2.1167.0",
+        "aws-sdk": "^2.1176.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
-        "module-composer": "^0.52.0"
+        "module-composer": "^0.54.0"
     },
     "devDependencies": {
-        "task-library": "^0.3.31"
-    },
-    "publishConfig": {
-        "access": "public"
+        "task-library": "^0.6.0"
     }
 }
