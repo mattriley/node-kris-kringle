@@ -1,4 +1,4 @@
-module.exports = () => async log => {
+module.exports = () => log => {
 
     return log.reduce((acc, data) => {
         data.players.forEach(player => {

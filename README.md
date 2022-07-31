@@ -3,8 +3,8 @@
 
 <p align="right">
     <code>0% cov</code>&nbsp;
-    <code>151 sloc</code>&nbsp;
-    <code>16 files</code>&nbsp;
+    <code>155 sloc</code>&nbsp;
+    <code>17 files</code>&nbsp;
     <code>4 deps</code>&nbsp;
     <code>5 dev deps</code>
 </p>
@@ -77,10 +77,11 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 ###### <p align="right"><em>Can't see the diagram?</em> <a id="link-1" href="https://github.com/mattriley/node-kris-kringle#user-content-link-1">View it on GitHub</a></p>
 ```mermaid
 graph TD;
-    commands-->services;
-    commands-->io;
+    commands-->effects;
+    commands-->lib;
     commands-->config;
+    effects-->io;
+    effects-->config;
     io-->config;
-    services-->io;
-    services-->config;
+    lib-->config;
 ```
