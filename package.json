@@ -22,17 +22,24 @@
         "bin/**/*"
     ],
     "scripts": {
-        "test": "npx task test",
+        "cov": "npx task cov",
+        "deploy": "npx task deploy",
+        "lint": "npx task lint",
+        "pre": "npx task pre",
         "start": "npx task start",
-        "deploy": "npx task deploy"
+        "test": "npx task test"
     },
     "dependencies": {
-        "aws-sdk": "^2.1176.0",
+        "aws-sdk": "^2.1185.0",
         "fast-glob": "^3.2.11",
         "lodash": "^4.17.21",
         "module-composer": "^0.56.0"
     },
     "devDependencies": {
-        "task-library": "^0.6.6"
+        "cloc": "^2.10.0",
+        "doctoc": "^2.2.0",
+        "eslint": "^8.20.0",
+        "husky": "^8.0.1",
+        "task-library": "^0.40.0"
     }
 }

@@ -6,7 +6,7 @@
     <code>151 sloc</code>&nbsp;
     <code>16 files</code>&nbsp;
     <code>4 deps</code>&nbsp;
-    <code>1 dev deps</code>
+    <code>5 dev deps</code>
 </p>
 
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
