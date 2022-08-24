@@ -1,15 +1,10 @@
 # Kris Kringle
 
-
-<p align="right">
-    <code>0% cov</code>&nbsp;
-    <code>155 sloc</code>&nbsp;
-    <code>17 files</code>&nbsp;
-    <code>4 deps</code>&nbsp;
-    <code>5 dev deps</code>
-</p>
+<p align="right"><code>155 sloc</code>&nbsp;<code>17 files</code>&nbsp;<code>4 deps</code>&nbsp;<code>10 dev deps</code></p>
 
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
+
+<br />
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -41,7 +36,7 @@ kk <configJsonFile>
 
 ## Example
 
-###### <p align="right"><a href="https://github.com/mattriley/node-kris-kringle/blob/master/config-example.json">config-example.json</a></p>
+###### <p align="right"><a href="https://github.com/mattriley/node-kris-kringle/blob/undefined/config-example.json">config-example.json</a></p>
 ```json
 {
     "dryRun": true,

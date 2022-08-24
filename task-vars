@@ -1,7 +1,6 @@
 #!/bin/bash
 
-export DISPLAY_NAME="Kris Kringle"
-export ITERMOCIL_TASKS="edit | barrel-gen-watch"
+export DEV_TASKS="edit | barrel-gen-watch"
 
 export COV_BRANCHES=0
 export COV_LINES=0
