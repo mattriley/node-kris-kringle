@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export DEV_TASKS="edit | barrel-gen-watch"
-
 export COV_BRANCHES=0
 export COV_LINES=0
 export COV_FUNCTIONS=0
