@@ -28,4 +28,4 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 
 ## Architecture
 
-<%- await lib.compose(c => lib.renderCode(c.mermaid(), 'mermaid')) %>
+<%- await lib.renderModuleDiagram() %>
