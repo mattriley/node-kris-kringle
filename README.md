@@ -1,6 +1,6 @@
 # Kris Kringle
 
-<p align="right"><code>160 sloc</code>&nbsp;<code>18 files</code>&nbsp;<code>4 deps</code>&nbsp;<code>10 dev deps</code></p>
+<p align="right"><code>161 sloc</code>&nbsp;<code>18 files</code>&nbsp;<code>4 deps</code>&nbsp;<code>10 dev deps</code></p>
 
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
 
@@ -36,7 +36,7 @@ kk <configJsonFile>
 
 ## Example
 
-###### <p align="right"><a href="https://github.com/mattriley/node-kris-kringle/blob/undefined/config-example.json">config-example.json</a></p>
+###### <p align="right"><a href="https://github.com/mattriley/node-kris-kringle/blob/master/config-example.json">config-example.json</a></p>
 ```json
 {
     "dryRun": true,
@@ -74,11 +74,11 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 graph TD;
     commands-->effects;
     commands-->lib;
-    commands-->config;
+    commands-->constants;
     effects-->io;
-    effects-->config;
-    io-->config;
-    lib-->config;
+    effects-->constants;
+    io-->constants;
+    lib-->constants;
 ```
 <p align="center">
   <em>This diagram was generated with <a href="https://github.com/mattriley/node-module-composer">Module Composer</a></em>
