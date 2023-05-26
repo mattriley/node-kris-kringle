@@ -5,12 +5,12 @@ const modules = require('./modules');
 module.exports = ({ config }) => {
 
     const { configure } = composer(modules);
-    const { compose, constants } = configure(defaultConfig, config);
+    const { compose } = configure(defaultConfig, config);
 
-    const { io } = compose('io', { constants });
-    const { lib } = compose('lib', { constants });
-    const { effects } = compose('effects', { io, constants });
-    compose('commands', { effects, lib, constants });
+    const { io } = compose('io');
+    const { lib } = compose('lib');
+    const { effects } = compose('effects', { io });
+    compose('commands', { effects, lib });
 
     return compose.end();
 

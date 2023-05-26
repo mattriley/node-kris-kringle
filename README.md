@@ -74,11 +74,7 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 graph TD;
     commands-->effects;
     commands-->lib;
-    commands-->constants;
     effects-->io;
-    effects-->constants;
-    io-->constants;
-    lib-->constants;
 ```
 <p align="center">
   <em>This diagram was generated with <a href="https://github.com/mattriley/node-module-composer">Module Composer</a></em>
