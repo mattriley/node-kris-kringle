@@ -1,7 +1,7 @@
 const fs = require('fs');
 const glob = require('fast-glob');
-const AWS = require('aws-sdk');
 const shuffle = require('lodash/shuffle');
+const { SNS } = require('@aws-sdk/client-sns');
 
 module.exports = ({ constants }) => () => {
 
@@ -9,7 +9,7 @@ module.exports = ({ constants }) => () => {
         fs,
         fsp: fs.promises,
         glob,
-        sns: new AWS.SNS({ region: constants.awsRegion }),
+        sns: new SNS({ region: constants.awsRegion }),
         shuffle,
         getDate: () => new Date()
     };
