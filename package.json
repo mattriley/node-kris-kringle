@@ -31,10 +31,10 @@
         "test": "npx task test"
     },
     "dependencies": {
-        "@aws-sdk/client-sns": "^3.338.0",
+        "@aws-sdk/client-sns": "^3.341.0",
         "fast-glob": "^3.2.12",
         "lodash": "^4.17.21",
-        "module-composer": "^0.116.0"
+        "module-composer": "^0.117.0"
     },
     "devDependencies": {
         "cloc": "^2.11.0",
@@ -43,9 +43,9 @@
         "eslint": "^8.41.0",
         "eslint-plugin-import": "^2.27.5",
         "husky": "^8.0.3",
-        "module-indexgen": "^0.32.0",
+        "module-indexgen": "^0.33.0",
         "npm-check-updates": "^16.10.12",
-        "task-library": "^0.215.0",
+        "task-library": "^0.216.0",
         "testing": "file:./testing"
     }
 }
