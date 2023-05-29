@@ -1,8 +1,8 @@
 const flow = require('lodash/flow');
 
-module.exports = ({ effects, lib, constants }) => async () => {
+module.exports = ({ effects, lib, config }) => async () => {
 
-    const { players, spend } = constants;
+    const { players, spend } = config;
     const log = await effects.readOutputFiles();
     const previousAssignments = lib.getPreviousAssignments(log);
 

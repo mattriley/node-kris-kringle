@@ -1,7 +1,7 @@
-module.exports = ({ constants }) => spend => players => {
+module.exports = ({ config }) => spend => players => {
 
     return players.map(player => {
-        const message = constants.template
+        const message = config.template
             .replace('{name}', player.name)
             .replace('{kk}', player.kk)
             .replace('{spend}', spend);

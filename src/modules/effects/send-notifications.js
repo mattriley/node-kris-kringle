@@ -1,8 +1,8 @@
-module.exports = ({ io, constants }) => players => {
+module.exports = ({ io, config }) => players => {
 
     const notify = async player => {
         try {
-            if (constants.dryRun) throw new Error('Not sending because dry run is enabled.');
+            if (config.dryRun) throw new Error('Not sending because dry run is enabled.');
             await io.sns.publish(player.smsRequest).promise();
             return { sent: true };
         } catch (err) {

@@ -1,4 +1,4 @@
-module.exports = ({ constants }) => players => {
+module.exports = ({ config }) => players => {
 
     return players.map(player => {
         const smsRequest = {
@@ -6,11 +6,11 @@ module.exports = ({ constants }) => players => {
             MessageAttributes: {
                 'AWS.SNS.SMS.SMSType': {
                     DataType: 'String',
-                    StringValue: constants.smsType
+                    StringValue: config.smsType
                 },
                 'AWS.SNS.SMS.SenderID': {
                     DataType: 'String',
-                    StringValue: constants.smsSenderId
+                    StringValue: config.smsSenderId
                 }
             },
             PhoneNumber: player.number
