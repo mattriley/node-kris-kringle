@@ -1,7 +1,7 @@
 const fs = require('fs');
 const glob = require('fast-glob');
 const shuffle = require('lodash/shuffle');
-const { SNS } = require('@aws-sdk/client-sns');
+const { SNSClient } = require('@aws-sdk/client-sns');
 
 module.exports = ({ config }) => () => {
 
@@ -9,7 +9,7 @@ module.exports = ({ config }) => () => {
         fs,
         fsp: fs.promises,
         glob,
-        sns: new SNS({ region: config.awsRegion }),
+        sns: new SNSClient({ region: config.awsRegion }),
         shuffle,
         getDate: () => new Date()
     };
