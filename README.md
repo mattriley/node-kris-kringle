@@ -1,6 +1,6 @@
 # Kris Kringle
 
-<p align="right"><code>163 sloc</code>&nbsp;<code>18 files</code>&nbsp;<code>4 deps</code>&nbsp;<code>9 dev deps</code></p>
+<p align="right"><code>162 sloc</code>&nbsp;<code>18 files</code>&nbsp;<code>4 deps</code>&nbsp;<code>9 dev deps</code></p>
 
 Christmas gift-giving made easy by randomising a draw and notifying players of their KK by SMS text message.
 
