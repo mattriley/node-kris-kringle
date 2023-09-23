@@ -72,9 +72,9 @@ See [`src/default-config.json`](https://github.com/mattriley/kris-kringle/blob/m
 ###### <p align="right"><em>Can't see the diagram?</em> <a id="link-1" href="https://github.com/mattriley/node-kris-kringle#user-content-link-1">View it on GitHub</a></p>
 ```mermaid
 graph TD;
+    effects-->io;
     commands-->effects;
     commands-->lib;
-    effects-->io;
 ```
 <p align="center">
   <em>This diagram was generated with <a href="https://github.com/mattriley/node-module-composer">Module Composer</a></em>
