@@ -4,5 +4,5 @@ const compose = require('../src/compose');
 
 const [configFile = 'config.json'] = process.argv.slice(2);
 const config = JSON.parse(fs.readFileSync(configFile, 'utf-8'));
-const { modules } = compose({ config });
-modules.commands.draw();
+const { commands } = compose({ config });
+commands.draw();
