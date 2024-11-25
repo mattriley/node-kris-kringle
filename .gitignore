@@ -5,6 +5,7 @@
 /.serverless
 /.tap
 /.vscode
+/archive
 /build
 /config.*
 /coverage
